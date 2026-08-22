@@ -19,10 +19,12 @@ files can be stored in your own iCloud Drive.
   protection. Document Vault files are also on-device unless you explicitly
   enable the optional iCloud setting. Use Profile → Data → Backup & Restore
   for encrypted backups you control.
-- **What does the AI see?** AI features are bring-your-own-key: content
-  you send goes directly from your device to Anthropic under your own
-  API key. Details in the [Privacy Policy](privacy).
+- **Does the app require an AI API key?** No. The shipping app has no
+  external-AI chat, API-key entry, or paid AI unlock. CFO findings, Plan,
+  Foresight, investment analysis, statement parsing, and scanned-PDF OCR run
+  on the device.
 
 ## Legal
 
 - [Privacy Policy](privacy)
+- [Terms of Use](terms)
