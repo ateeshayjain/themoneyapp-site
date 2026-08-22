@@ -20,7 +20,7 @@ The Money App is a personal finance tracking application designed for the Indian
 - Set and monitor spending limits across 27 categories
 - Track savings goals, insurance policies, assets, and liabilities
 - Import bank statements from supported Indian banks (HDFC, ICICI, SBI, Axis, Kotak)
-- Generate financial reports including tax summaries (80C/80D)
+- Generate illustrative tax estimates and evidence summaries (80C/80D)
 - View a Personal CFO dashboard with health scores and net worth analysis
 
 The core financial ledger operates on your device. No app account creation is required. Optional Gmail, AMFI NAV refresh, and iCloud Document Vault features use the external services described in the Privacy Policy.
@@ -40,8 +40,8 @@ You are solely responsible for:
 **IMPORTANT:** The Money App is a financial tracking and organisation tool. It does NOT provide financial, investment, tax, or legal advice.
 
 - The Financial Health Score, budget suggestions, insights, Plan, Foresight, and investment analysis are for informational and educational purposes only.
-- The tax reports (80C/80D summaries) are indicative and should not be used as the sole basis for filing tax returns. Always consult a qualified Chartered Accountant (CA) or tax professional.
-- Investment-related displays (portfolio analysis, SIP tracking, mutual fund data) reflect data you have entered and do not constitute investment recommendations.
+- Tax Estimates use only the inputs and FY 2025-26 rules stated on screen. They are illustrative, may omit exemptions or eligibility conditions, do not recommend a regime, and must not be used as the sole basis for filing. Always verify with the Income Tax portal or a qualified Chartered Accountant (CA).
+- Investment-related displays (portfolio analysis, SIP tracking, mutual fund data) reflect data you have entered and do not constitute investment recommendations. Personalized asset-allocation guidance is not included in the Release app.
 - The Developer is not a SEBI-registered investment adviser, tax consultant, or financial planner.
 
 You acknowledge that any financial decisions you make based on information displayed in the App are made at your own risk and discretion.
