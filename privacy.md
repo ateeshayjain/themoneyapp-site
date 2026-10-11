@@ -1,6 +1,6 @@
 # Privacy Policy for The Money App
 
-**Last Updated: 22 August 2026**
+**Last Updated: 11 October 2026**
 
 > This canonical policy is kept in sync with the in-app Privacy Policy screen
 > (`PersonalFinanceApp/Views/More/PrivacyPolicyView.swift`). When you change one,
@@ -32,15 +32,21 @@ All of the following data is stored locally on your device and is never transmit
 
 **Bank SMS (optional)** -- If you set up the SMS Auto-Track shortcut, bank transaction SMS messages you choose to forward via the iOS Shortcuts app are parsed on your device into transactions. The App never reads your messages directly and no SMS content leaves your device.
 
+**Details read from your financial emails (only if you turn on Gmail Auto-Track)** -- For emails the App recognises, it keeps the transaction it records and, where the email states them: the last digits of the account or card, a stated account balance and its date, a card statement's amount due, minimum due and due date, and auto-pay mandate details (merchant, limit, frequency). It also keeps each email's Gmail message ID so the same email is not processed twice, and, for emails it flags as possibly not being a payment, the email's subject line and sender so you can review the flag. Nothing else from an email is stored. These details stay on your device and are included in your encrypted backups.
+
+**Your corrections** -- Categories you assign to a merchant, and names you give merchants, are stored on your device so later payments to the same merchant can be suggested the same way.
+
 **Home-screen widget** -- The widget displays a monthly spending summary (amounts and your top spending category) stored in an App Group container on your device, protected by iOS file protection.
 
 ## 3. Third-Party Services
 
 The App connects to the internet only for the following optional or read-only features. It runs no backend of its own:
 
-**Google Gmail API** -- If you enable the optional Gmail Auto-Track feature, the App connects to your Gmail account with read-only access (scope: gmail.readonly) via Google OAuth, fetches bank transaction alert emails from known bank sender addresses, and parses them on your device. Email content is processed entirely on-device and is never sent to us or any other third party. The App's use of Gmail data complies with the Google API Services User Data Policy, including the Limited Use requirements. You can disconnect Gmail at any time, which deletes the stored tokens from your device.
+**Google Gmail API** -- If you turn on the optional Gmail Auto-Track feature, the App connects to your Gmail account with read-only access (scope: gmail.readonly) through Google OAuth and searches for financial emails: bank and card transaction alerts, card statement summaries, auto-pay mandate notices, dividend notices, insurance premium receipts, mutual-fund and stock purchase and redemption confirmations, and loan and EMI servicing emails. Searches cover known bank, card, insurer and fund senders, plus emails from any sender whose subject reads like a transaction (for example "debited", "credited" or "UPI"), so that a bank changing its email address is not missed. Every email is read and parsed on your device; an email that is not recognised as a financial record is discarded, and only its message ID is kept so it is not read again. Uncertain transactions, and every holding or loan, are added only after you approve them. Password-protected attachments are never opened automatically. The App cannot send, change or delete email. Email content is never sent to us, to any server, to advertising or analytics services, or to any AI service. The App's use of Gmail data complies with the Google API Services User Data Policy, including the Limited Use requirements. You can disconnect Gmail at any time; this revokes the App's access at Google and deletes the stored tokens from your device. Records already added stay in your ledger until you delete them.
 
 **AMFI mutual-fund NAVs** -- If you refresh your portfolio's fund values, the App downloads AMFI's public daily NAV file (amfiindia.com) over the network and matches it on your device. The request carries no fund name or holding, so it reveals nothing about what you own; it is read-only and sends no personal data. This is a public data feed, not an account service — no sign-in or identifier is involved.
+
+**Currency reference rates** -- If you ask for exchange rates on the Currency Rates screen, the App downloads the European Central Bank's public euro reference-rate file (ecb.europa.eu) and works out rupee figures on your device; after that first request it refreshes the file about once a month. The request names no currency and carries no identifier, so it reveals nothing about you or your spending; it is read-only and sends no personal data. If you never ask for rates, the App never contacts this service.
 
 **Apple iCloud Drive (optional)** -- If you enable iCloud storage for the Document Vault, the App stores those vault files in the private iCloud container associated with your Apple account. Apple provides and governs that storage. The option is off by default, does not sync your financial ledger, and can be disabled in the App.
 
@@ -96,7 +102,7 @@ The App is designed for users in India and we are committed to complying with ap
 Given our privacy-first architecture (no data collection, no servers, no accounts), our data handling obligations are minimal. Nonetheless:
 
 - You have the right to access, correct, and delete your data at any time (all available through the App's interface).
-- Optional services you choose — Google OAuth/Gmail and Apple iCloud Drive — may process data outside India under their own terms. The disclosures above explain what each service receives. You can use the core ledger without enabling either.
+- Optional services you choose — Google OAuth/Gmail and Apple iCloud Drive — may process data outside India under their own terms. The disclosures above explain what each service receives. You can use the core ledger without enabling either. The AMFI and European Central Bank downloads receive no personal data.
 - We do not sell, rent, or trade any personal data.
 
 ## 10. Changes to This Policy
